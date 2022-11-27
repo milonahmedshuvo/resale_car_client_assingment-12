@@ -1,0 +1,80 @@
+import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import toast from 'react-hot-toast';
+import Loding from '../../../Sheared/Loding/Loding';
+
+
+const AllBuyers = () => {
+
+    const { data: buyers = [], isLoading, refetch } = useQuery({
+        queryKey: ['buyers'],
+        queryFn: async () => {
+            const res = await fetch('http://localhost:5000/singupUsers/buyer')
+            const data = await res.json()
+            return data
+            isLoading()
+        }
+    })
+
+    if (isLoading) {
+        return <Loding></Loding>
+    }
+
+
+
+
+
+    const handleSingupUsersDelate = (id) => {
+        console.log(id)
+        fetch(`http://localhost:5000/singupUsers/${id}`, {
+            method: 'DELETE',
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.deletedCount > 0) {
+                    toast.success('successfully deleted')
+                    refetch()
+                }
+            })
+            .catch(e => console.error(e))
+    }
+
+
+
+
+    return (
+        <div>
+            <div className="overflow-x-auto">
+                <table className="table w-full">
+
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {
+                            buyers?.map((buyer, i) => <tr key={buyer._id}>
+                                <th>{i + 1}</th>
+                                <td>{buyer.name}</td>
+                                <td>{buyer.email}</td>
+                                <td><button onClick={() => handleSingupUsersDelate(buyer._id)} className='btn btn-xs  bg-gradient-to-r from-pink-500 to-pink-500'>Delete</button></td>
+                            </tr>)
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
+};
+
+export default AllBuyers;
