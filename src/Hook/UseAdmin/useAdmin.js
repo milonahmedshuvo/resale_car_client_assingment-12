@@ -10,7 +10,7 @@ const useAdmin = (email) => {
  console.log(isAdmin)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singupUsers/admin/${email}`)
+        fetch(`https://react-assignment-server-12.vercel.app/singupUsers/admin/${email}`)
             .then(res => res.json())
             .then((data)=>{
                 setIsAdmin(data.role)

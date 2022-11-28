@@ -47,7 +47,7 @@ const AddProduct = () => {
 
 
 
-        fetch(`http://localhost:5000/addproduct`, {
+        fetch(`https://react-assignment-server-12.vercel.app/addproduct`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -68,7 +68,7 @@ const AddProduct = () => {
 
 
 
-        fetch(`http://localhost:5000/anyname`, {
+        fetch(`https://react-assignment-server-12.vercel.app/anyname`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -99,7 +99,7 @@ const AddProduct = () => {
     const { data: catagoris = [], isLoading, refetch } = useQuery({
         queryKey: ['catagoris'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/catagoris')
+            const res = await fetch('https://react-assignment-server-12.vercel.app/catagoris')
             const data = res.json()
             return data
         }

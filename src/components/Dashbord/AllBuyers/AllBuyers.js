@@ -9,7 +9,7 @@ const AllBuyers = () => {
     const { data: buyers = [], isLoading, refetch } = useQuery({
         queryKey: ['buyers'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/singupUsers/buyer')
+            const res = await fetch('https://react-assignment-server-12.vercel.app/singupUsers/buyer')
             const data = await res.json()
             return data
             isLoading()
@@ -26,7 +26,7 @@ const AllBuyers = () => {
 
     const handleSingupUsersDelate = (id) => {
         console.log(id)
-        fetch(`http://localhost:5000/singupUsers/${id}`, {
+        fetch(`https://react-assignment-server-12.vercel.app/singupUsers/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

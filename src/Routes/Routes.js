@@ -42,7 +42,7 @@ export const router=createBrowserRouter([
                 path:'/catagory/:id',
                 element:<ProviteRoute><Allproduct></Allproduct></ProviteRoute>,
                 loader:({params})=>{
-                    return fetch(`http://localhost:5000/catagoris/${params.id}`)
+                    return fetch(`https://react-assignment-server-12.vercel.app/catagoris/${params.id}`)
                 }
             },
             {

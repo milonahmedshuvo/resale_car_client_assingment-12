@@ -17,7 +17,7 @@ const Singup = () => {
         const providerr = new GoogleAuthProvider();
         googleUser(providerr)
             .then((res) => {
-                console.log(res)
+                const user=res.user
                 const saveuser = {
                     name: user.displayName,
                     email: user.email,
@@ -73,7 +73,7 @@ const Singup = () => {
 
 
     const handleSaveuser = (saveuser) => {
-        fetch(`http://localhost:5000/singupUsers`, {
+        fetch(`https://react-assignment-server-12.vercel.app/singupUsers`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

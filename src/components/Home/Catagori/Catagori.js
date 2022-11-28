@@ -11,7 +11,7 @@ const Catagori = () => {
     const {data:catagoris=[], refetch, isLoading}=useQuery({
         queryKey:['catagoris'],
         queryFn: async ()=>{
-            const res= await fetch('http://localhost:5000/catagoris')
+            const res= await fetch('https://react-assignment-server-12.vercel.app/catagoris')
             const result=await res.json()
             return result
         }

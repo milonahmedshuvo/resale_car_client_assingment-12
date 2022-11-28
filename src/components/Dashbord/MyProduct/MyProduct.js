@@ -14,7 +14,7 @@ const MyProduct = () => {
     const { data: addproducts = [], isLoading, refetch } = useQuery({
         queryKey: ["addproducts", user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/addproduct?email=${user?.email}`)
+            const res = await fetch(`https://react-assignment-server-12.vercel.app/addproduct?email=${user?.email}`)
             const data = await res.json()
             return data
             isLoading()
@@ -31,7 +31,7 @@ const MyProduct = () => {
 
 
     const handledelete = (id) => {
-        fetch(`http://localhost:5000/addproduct/${id}`, {
+        fetch(`https://react-assignment-server-12.vercel.app/addproduct/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
@@ -49,7 +49,7 @@ const MyProduct = () => {
     const handleAdvertise = (product) => {
 
 
-        fetch(`http://localhost:5000/advertise`, {
+        fetch(`https://react-assignment-server-12.vercel.app/advertise`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
