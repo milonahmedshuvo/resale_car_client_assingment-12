@@ -4,8 +4,8 @@ const Offer = () => {
     return (
         <div>
 
-            <div>
-                <p className='font-bold text-success text-2xl'>Latest Offers</p>
+            <div className='my-16'>
+                <p className='font-bold text-success text-2xl mb-4'>Latest Offers</p>
                 <h1><span className='font-bold text-black text-5xl'>OUR</span> 
                  <span className='font-bold text-yellow-400 text-5xl' >OFFERS</span> </h1>
             </div>
@@ -18,9 +18,9 @@ const Offer = () => {
                 <div className="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://storage.googleapis.com/theme-vessel-items/checking-sites/cmart-html/HTML/main/img/car/car-6.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
-                        <p>Frb, 20 2018</p>
-                        <h2 className="card-title">Audi Q7 2018</h2>
-                        <p>$ 412000 monthly</p>
+                        <p className='text-violet-600 font-bold font-serif'>Frb, 20 2018</p>
+                        <h2 className="card-title font-bold">Audi Q7 2018</h2>
+                        <p className='text-yellow-500 font-mono font-bold '>$ 412000 monthly</p>
                         <div className="card-actions justify-end">
                             <button className="btn btn-success">Reed More</button>
                         </div>
@@ -33,9 +33,9 @@ const Offer = () => {
                 <div className="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://storage.googleapis.com/theme-vessel-items/checking-sites/cmart-html/HTML/main/img/car/car-4.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
-                        <p>April, 30 2016</p>
-                        <h2 className="card-title">TOYOTA PRIUS 2018</h2>
-                        <p>$ 891000 monthly</p>
+                        <p className='text-fuchsia-500 font-bold font-serif' >April, 30 2016</p>
+                        <h2 className="card-title font-bold">TOYOTA PRIUS 2018</h2>
+                        <p className='text-yellow-500 font-mono font-bold '>$ 891000 monthly</p>
                         <div className="card-actions justify-end">
                             <button className="btn btn-success">Reed More</button>
                         </div>
@@ -47,9 +47,9 @@ const Offer = () => {
                 <div className="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://storage.googleapis.com/theme-vessel-items/checking-sites/cmart-html/HTML/main/img/car/car-1.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
-                        <p>March, 26 2021</p>
-                        <h2 className="card-title">TOYOTA PRIUS 2021</h2>
-                        <p>$ 772000 monthly</p>
+                        <p className='text-indigo-500 font-bold font-serif'>March, 26 2021</p>
+                        <h2 className="card-title font-bold">TOYOTA PRIUS 2021</h2>
+                        <p className='text-yellow-500 font-mono font-bold '>$ 772000 monthly</p>
                         <div className="card-actions justify-end">
                             <button className="btn btn-success">Reed More</button>
                         </div>
