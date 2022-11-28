@@ -46,6 +46,7 @@ const AuthProvider = ({children}) => {
      return ()=>unscribe()
     },[])
 
+    
     const authInfo={user, createUser,singIn, googleUser, profileUpdate, userSignOut, loading}
     return (
         <div>

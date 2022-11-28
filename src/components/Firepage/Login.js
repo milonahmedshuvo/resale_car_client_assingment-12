@@ -18,15 +18,7 @@ const Login = () => {
     const from=location.state?.from?.pathname || '/'
     
 
-    const handleGoogle=()=>{
-        const providerr = new GoogleAuthProvider();
-        googleUser(providerr)
-        .then((res)=>{
-            console.log(res.user)
-            toast.success('Successful Google Login')
-        })
-        .catch((error)=>console.log(error))
-    }
+    
 
 
 
@@ -93,9 +85,9 @@ const Login = () => {
 
                     </form>
                     <p className="mt-2 font-serif">New to Resale Car Website?<Link to='/singup' className="text-secondary ml-2">Create new account</Link> </p>
-                    <div className="divider">OR</div>
+                   
 
-                    <button onClick={handleGoogle} className="btn btn-outline w-full">CONTINUE WITH GOOGLE</button>
+                    
 
 
                 </div>
