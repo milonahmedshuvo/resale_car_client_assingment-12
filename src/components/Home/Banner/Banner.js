@@ -1,15 +1,15 @@
-import React from 'react';
+// import React from 'react';
 
 
-const Banner = () => {
-    return (
-        <div>
-            <h1>silder and banner</h1>
-        </div>
-    );
-};
+// const Banner = () => {
+//     return (
+//         <div>
+//             <h1>silder and banner</h1>
+//         </div>
+//     );
+// };
 
-export default Banner;
+// export default Banner;
 
 
 
