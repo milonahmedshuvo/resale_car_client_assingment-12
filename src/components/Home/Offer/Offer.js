@@ -15,7 +15,7 @@ const Offer = () => {
 
 
 
-                <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                <div className="card card-compact bg-base-100 shadow-xl">
                     <figure><img src="https://storage.googleapis.com/theme-vessel-items/checking-sites/cmart-html/HTML/main/img/car/car-6.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <p className='text-violet-600 font-bold font-serif'>Frb, 20 2018</p>
@@ -30,7 +30,7 @@ const Offer = () => {
 
 
 
-                <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                <div className="card card-compact  bg-base-100 shadow-xl">
                     <figure><img src="https://storage.googleapis.com/theme-vessel-items/checking-sites/cmart-html/HTML/main/img/car/car-4.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <p className='text-fuchsia-500 font-bold font-serif' >April, 30 2016</p>
@@ -44,7 +44,7 @@ const Offer = () => {
 
 
 
-                <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                <div className="card card-compact bg-base-100 shadow-xl">
                     <figure><img src="https://storage.googleapis.com/theme-vessel-items/checking-sites/cmart-html/HTML/main/img/car/car-1.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <p className='text-indigo-500 font-bold font-serif'>March, 26 2021</p>

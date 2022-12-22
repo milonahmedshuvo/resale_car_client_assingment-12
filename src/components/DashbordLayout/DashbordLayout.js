@@ -11,18 +11,18 @@ const DashbordLayout = () => {
 
     
     const buyerNavbar = <>
-        <li><Link to='/dashbord/myorder'>My Orders</Link></li>
+        <li><Link to='/dashbord/myorder' className='text-violet-500 font-serif font-medium '>My Orders</Link></li>
     </>
 
     const sellarNavbar = <>
-        <li><Link to='/dashbord/addproducts'>Add Product</Link></li>
-        <li><Link to='/dashbord/myproducts'>My Product</Link></li>
-        <li><Link to='/dashbord/mybuyer'>My Buyer</Link></li>
+        <li><Link to='/dashbord/addproducts' className='text-violet-500 font-serif font-medium '>Add Product</Link></li>
+        <li><Link to='/dashbord/myproducts' className='text-violet-500 font-serif font-medium '>My Product</Link></li>
+        <li><Link to='/dashbord/mybuyer' className='text-violet-500 font-serif font-medium '>My Buyer</Link></li>
     </>
 
     const adminNavber = <>
-        <li><Link to='/dashbord/allseller'>All Sellers</Link></li>
-        <li><Link to='/dashbord/allbuyer'>All Buyers</Link></li>
+        <li><Link to='/dashbord/allseller' className='text-violet-500 font-serif font-medium '>All Sellers</Link></li>
+        <li><Link to='/dashbord/allbuyer' className='text-violet-500 font-serif font-medium '>All Buyers</Link></li>
     </>
 
     return (

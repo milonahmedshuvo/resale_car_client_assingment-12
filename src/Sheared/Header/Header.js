@@ -61,7 +61,7 @@ const handleSingOut=()=>{
 
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Resale Car</a>
+        <a className="btn btn-ghost normal-case text-xl font-serif text-violet-500">Resale Car</a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">

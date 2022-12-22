@@ -20,7 +20,7 @@ const Catagori = () => {
 
     return (
         <div className='mt-20'>
-            <h1 className='text-teal-400 font-bold font-serif text-5xl text-center mt-4 mb-4 '> Car Catagoris {catagoris.length}</h1>
+            <h1 className='text-teal-400 font-bold font-serif text-2xl  md:text-5xl text-center mt-4 mb-4 '> Car Catagoris {catagoris.length}</h1>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {

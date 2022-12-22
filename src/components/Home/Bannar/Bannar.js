@@ -12,7 +12,7 @@ const Bannar = () => {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         
-                        <h1 className="mb-5 text-5xl font-bold"> Buy Used Cars At Best Price </h1>
+                        <h1 className="mb-5 text-2xl md:text-5xl font-bold"> Buy Used Cars At Best Price </h1>
                         <p className="mb-5">Confused? Easy way to compare cars
                         </p>
                         <button className="btn btn-primary">View all cars</button>
