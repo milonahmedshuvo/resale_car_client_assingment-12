@@ -1,27 +1,95 @@
-import React from 'react';
+import { useRef } from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import "./styles.css";
+
+// import required modules
+import { Pagination, Navigation, Autoplay } from "swiper";
+
+
+
+
 
 
 
 const Bannar = () => {
 
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
 
-    return (
-        <div className='rounded-lg'>
-            <div className="hero  h-96" style={{ backgroundImage: `url("https://storage.googleapis.com/theme-vessel-items/checking-sites/cmart-html/HTML/main/img/car/car-1.jpg")` }}>
-                <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
-                    <div className="max-w-md">
-                        
-                        <h1 className="mb-5 text-2xl md:text-5xl font-bold"> Buy Used Cars At Best Price </h1>
-                        <p className="mb-5">Confused? Easy way to compare cars
-                        </p>
-                        <button className="btn btn-primary">View all cars</button>
-                    </div>
-                </div>
-            </div>
 
+
+
+  return (
+    <div>
+      <>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        className="mySwiper h-[400px]"
+      >
+        <SwiperSlide>
+          <img
+          className="w-full h-full"
+            src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
+            alt=""
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+          className="w-full h-full"
+            src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
+            alt=""
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+          className="w-full h-full"
+            src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
+            alt=""
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+          className="w-full h-full"
+            src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
+            alt=""
+          />
+        </SwiperSlide>
+
+        <div className="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 18 18" ref={progressCircle}>
+            {/* <circle cx="24" cy="24" r="20"></circle> */}
+          </svg>
+          <span ref={progressContent}></span>
         </div>
-    );
-};
+      </Swiper>
+    </>
+    </div>
+  )
+}
 
-export default Bannar;
+export default Bannar

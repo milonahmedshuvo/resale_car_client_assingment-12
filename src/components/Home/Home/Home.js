@@ -4,6 +4,8 @@ import Bannar from '../Bannar/Bannar';
 import Banner from '../Banner/Banner';
 import Catagori from '../Catagori/Catagori';
 import Offer from '../Offer/Offer';
+import Work from '../Work/Work';
+import Customer from '../Customer/Customer';
 
 const Home = () => {
     return (
@@ -12,6 +14,8 @@ const Home = () => {
            <Catagori></Catagori>
            <Adverticepro></Adverticepro>
            <Offer></Offer>
+           <Work></Work>
+           <Customer></Customer>
         </div>
     );
 };
