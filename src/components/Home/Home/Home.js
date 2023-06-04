@@ -6,6 +6,12 @@ import Catagori from '../Catagori/Catagori';
 import Offer from '../Offer/Offer';
 import Work from '../Work/Work';
 import Customer from '../Customer/Customer';
+import LetestedCar from '../LetestedCar/LetestedCar';
+import PopularCars from '../PopularCars/PopularCars';
+import BestSellersCars from './BestSellersCars/BestSellersCars';
+import AvailableProdcuts from '../AvailableProducts/AvailableProdcuts';
+import BroweType from '../BroweType/BroweType';
+import AboutUs from './AboutUs/AboutUs';
 
 const Home = () => {
     return (
@@ -13,9 +19,16 @@ const Home = () => {
            <Bannar></Bannar>
            <Catagori></Catagori>
            <Adverticepro></Adverticepro>
-           <Offer></Offer>
+           
            <Work></Work>
            <Customer></Customer>
+           <LetestedCar></LetestedCar>
+           <AboutUs></AboutUs>
+           <PopularCars></PopularCars>
+           <BestSellersCars></BestSellersCars>
+           <BroweType></BroweType>
+           <AvailableProdcuts></AvailableProdcuts>
+           <Offer></Offer>
         </div>
     );
 };

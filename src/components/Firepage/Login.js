@@ -51,6 +51,9 @@ const Login = () => {
                 <div className="w-96 ">
                     <h1 className="font-bold text-success text-center">Login Form</h1>
 
+                      <p>Email:       <span className='text-purple-400 ml-3 mt-6'> shuvo@gmail.com</span> </p>
+                      <p>Password:      <span className='text-purple-500 ml-3 mb-10'>1234567</span> </p>
+
                     <form onSubmit={handleSubmit(handleLogin)}>
 
                         <div className="form-control w-full ">

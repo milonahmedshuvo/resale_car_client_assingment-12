@@ -27,6 +27,9 @@ const handleSingOut=()=>{
   const manuBar = <>
 
     <Link className='font-bold mr-2 text-gray-500' to='/'><li>Home</li></Link>
+    
+    <Link to='/' className='font-bold mr-2 text-gray-500' > <li>Service</li> </Link>
+    <Link to='/' className='font-bold mr-2 text-gray-500' > <li>AboutUS</li> </Link>
     <Link to='/blog' className='font-bold mr-2 text-gray-500' > <li>Blog</li> </Link>
    
 
@@ -49,7 +52,7 @@ const handleSingOut=()=>{
 
 
   return (
-    <div className="navbar bg-base-100 flex justify-between ">
+    <div className="navbar bg-base-100 flex  justify-between ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -63,7 +66,7 @@ const handleSingOut=()=>{
         </div>
         <a className="btn btn-ghost normal-case text-xl font-serif text-violet-500">Resale Car</a>
       </div>
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-end hidden lg:flex mr-16 ">
         <ul className="menu menu-horizontal p-0">
 
           {manuBar}

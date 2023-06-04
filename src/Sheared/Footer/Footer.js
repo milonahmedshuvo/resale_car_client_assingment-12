@@ -4,26 +4,26 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-black text-neutral-content my-28 py-28">
+            <footer className="footer p-10 bg-black text-neutral-content mt-28 py-28">
                 <div>
-                    <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <span className="footer-title text-xl">Services</span>
+                    <a className="link link-hover text-lg">Branding</a>
+                    <a className="link link-hover text-lg">Design</a>
+                    <a className="link link-hover text-lg">Marketing</a>
+                    <a className="link link-hover text-lg">Advertisement</a>
                 </div>
                 <div>
-                    <span className="footer-title">Company</span>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <span className="footer-title text-xl">Company</span>
+                    <a className="link link-hover text-lg">Lamborghini</a>
+                    <a className="link link-hover text-lg">Aston Martin</a>
+                    <a className="link link-hover text-lg">Rolls-Royce</a>
+                    <a className="link link-hover text-lg">Alfa Romeo</a>
                 </div>
                 <div>
-                    <span className="footer-title">Legal</span>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <span className="footer-title text-lg">Legal</span>
+                    <a className="link link-hover text-lg">Terms of use</a>
+                    <a className="link link-hover text-lg">Privacy policy</a>
+                    <a className="link link-hover text-lg">Cookie policy</a>
                 </div>
             </footer>
         </div>

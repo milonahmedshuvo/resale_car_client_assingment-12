@@ -48,7 +48,7 @@ const Bannar = () => {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper h-[400px]"
       >
-        <SwiperSlide>
+        <SwiperSlide className="bg-[#191313]">
           <img
           className="w-full h-full"
             src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
@@ -56,7 +56,7 @@ const Bannar = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="bg-[#14172F]">
           <img
           className="w-full h-full"
             src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
@@ -64,7 +64,7 @@ const Bannar = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="bg-gray-400">
           <img
           className="w-full h-full"
             src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
@@ -72,7 +72,7 @@ const Bannar = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="bg-slate-300">
           <img
           className="w-full h-full"
             src="https://react-assignment-12-6bfe6.web.app/static/media/coroselCar.80d48735e2456f15e360.png"
